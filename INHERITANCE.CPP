@@ -43,7 +43,7 @@ int main()
     // programmer anyany(32,53);
     // cout << anyany.id << endl;
     programmer dev(3), dev2;
-    //** cout<<anyany.salary; //-->
-    //** cout<<anyany.id;   //---> throws errors because employee class is inherited privately(default).
+    //! cout<<anyany.salary; //-->
+    //! cout<<anyany.id;   //---> throw errors because employee class is inherited privately(default).
     return 0;
 }

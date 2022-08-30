@@ -1,6 +1,6 @@
-// #include <iostream>
-// #include <cmath>
-// using namespace std;
+#include <iostream>
+#include <cmath>
+using namespace std;
 // class B
 // {
 //   int b;
@@ -30,8 +30,8 @@
 //   //   cout << "D constructor is called." << endl;
 //   // }
 // };
-// int main()
-// {
+int main()
+{
 //   D a;
 //   a.printany();
 //   // int x = 23.54;
@@ -54,29 +54,43 @@
 //   // double x = xDegrees*3.14159/180;
 //   // double result = sin(x);
 //   // cout << "sin(x) = " << result << endl;
-//   return 0;
-// }
-#include<iostream>
-using namespace std;
 
-class Complex {
-private:
-	int real, imag;
-public:
-	Complex(int r = 0, int i = 0) {real = r; imag = i;}
+		// ********Reference variable******** //
+	int a = 10;
+	int &b = a;
+	int c = a;
+	cout <<a<<" "<<b<<" "<<c<<endl;
+	cout <<&a<<" "<<&b<<" "<<&c<<endl;
+	a += 10;
+	cout <<a<<" "<<b<<" "<<c<<endl;
+	b -= 5;
+	cout <<a<<" "<<b<<" "<<c<<endl;
+	c +=1;
+	cout <<a<<" "<<b<<" "<<c<<endl;
+
+  return 0;
+}
+// #include<iostream>
+// using namespace std;
+
+// class Complex {
+// private:
+// 	int real, imag;
+// public:
+// 	Complex(int r = 0, int i = 0) {real = r; imag = i;}
 	
-	// This is automatically called when '+' is used 
-	// between two Complex objects
-	Complex operator + (Complex const &obj) {
-		Complex res;
-		res.real = real + obj.real;
-		res.imag = imag + obj.imag;
-		return res;
-	}
-	void print() { cout << real << " + i" << imag << '\n'; }
-};
+//* This is automatically called when '+' is used 
+//* between two Complex objects
+// 	Complex operator + (Complex const &obj) {
+// 		Complex res;
+// 		res.real = real + obj.real;
+// 		res.imag = imag + obj.imag;
+// 		return res;
+// 	}
+// 	void print() { cout << real << " + i" << imag << '\n'; }
+// };
 
-int main()
+/* int main()
 {
 	Complex c1(10, 5), c2(6, 2);
 	c1.print();
@@ -84,3 +98,4 @@ int main()
 	Complex c3 = c1 + c2;
 	c3.print();
 }
+*/

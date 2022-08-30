@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-    // *****Function overlaoding is several functions with SAME NAME****
+    // *****Function overlaoding is several functions with SAME NAME**** //
 int sum(int a, int b)
 {
     return a+b;
