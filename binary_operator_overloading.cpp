@@ -5,7 +5,7 @@ class Equation
     int a, b, c;
     // friend Equation operator +(Equation, Equation);
 public:
-    Equation(int x = 0, int y = 0, int z = 0) : a(x), b(y), c(z) {}
+    Equation(int x = 0, int y = 0, int z = 0) : a{x}, b(y), c{z} {}  //! -->{} or () both can be used
     void showEqn()
     {
         cout << "The equation is " << a << "x + " << b << "y + " << c << " = 0" << endl;
@@ -21,7 +21,7 @@ public:
 };
 // Equation operator +(Equation obj1, Equation obj2){
 //     Equation temp;
-//     temp.a = obj1.a + obj2.a;                //  Same thing using friend function
+//     temp.a = obj1.a + obj2.a;                //! --> Same thing using friend function
 //     temp.b = obj1.b + obj2.b;
 //     temp.c = obj1.c + obj2.c;
 //    return temp;
