@@ -1,6 +1,6 @@
-// #include <iostream>
-// #include <cmath>
-// using namespace std;
+#include <iostream>
+#include <cmath>
+using namespace std;
 // class B
 // {
 //   int b;
@@ -24,49 +24,49 @@
 //   void printany(){
 //       cout<<"This is the testing with the constructor inheritance."<<endl;
 //   }
-  // D(int x)
-  // {
-  //   d = x;
-  //   cout << "D constructor is called." << endl;
-  // }
+// D(int x)
+// {
+//   d = x;
+//   cout << "D constructor is called." << endl;
+// }
 // };
 // int main()
 // {
-  //   D a;
-  //   a.printany();
-  // int x = 23.54;
-  // cout<<x<<endl;
+//   D a;
+//   a.printany();
+// int x = 23.54;
+// cout<<x<<endl;
 
 //   // *****Unlike c language, here is string data type in c++****
 
 //   string name  = "I am Vishal..And I love my Dhannu Madam..I love her so much..\n";
-  // string pronoun[10] = {"this", "that", "these", "those"};
-  // cout<<name;
-  // int a = name.length();
-  // cout<<a<<endl;
-  // int q = 14;
-  // int b= 3;
-  // double pie = double(22)/double(7);
-  // cout<<pie<<endl;
-  // cout<<sin(pie);
-  // cout <<(double(q)/double(b));
-  // double xDegrees = 90.0;
-  // double x = xDegrees*3.14159/180;
-  // double result = sin(x);
-  // cout << "sin(x) = " << result << endl;
+// string pronoun[10] = {"this", "that", "these", "those"};
+// cout<<name;
+// int a = name.length();
+// cout<<a<<endl;
+// int q = 14;
+// int b= 3;
+// double pie = double(22)/double(7);
+// cout<<pie<<endl;
+// cout<<sin(pie);
+// cout <<(double(q)/double(b));
+// double xDegrees = 90.0;
+// double x = xDegrees*3.14159/180;
+// double result = sin(x);
+// cout << "sin(x) = " << result << endl;
 
-	// 	// ********Reference variable******** //
-	// int a = 10;
-	// int &b = a;
-	// int c = a;
-	// cout <<a<<" "<<b<<" "<<c<<endl;
-	// cout <<&a<<" "<<&b<<" "<<&c<<endl;
-	// a += 10;
-	// cout <<a<<" "<<b<<" "<<c<<endl;
-	// b -= 5;
-	// cout <<a<<" "<<b<<" "<<c<<endl;
-	// c +=1;
-	// cout <<a<<" "<<b<<" "<<c<<endl;
+// 	// ********Reference variable******** //
+// int a = 10;
+// int &b = a;
+// int c = a;
+// cout <<a<<" "<<b<<" "<<c<<endl;
+// cout <<&a<<" "<<&b<<" "<<&c<<endl;
+// a += 10;
+// cout <<a<<" "<<b<<" "<<c<<endl;
+// b -= 5;
+// cout <<a<<" "<<b<<" "<<c<<endl;
+// c +=1;
+// cout <<a<<" "<<b<<" "<<c<<endl;
 
 //   return 0;
 // }
@@ -78,8 +78,8 @@
 // 	int real, imag;
 // public:
 // 	Complex(int r = 0, int i = 0) {real = r; imag = i;}
-	
-// // * This is automatically called when '+' is used 
+
+// // * This is automatically called when '+' is used
 // // * between two Complex objects
 // 	Complex operator + (Complex const &obj) {
 // 		Complex res;
@@ -98,3 +98,23 @@
 // 	Complex c3 = c1 + c2;
 // 	c3.print();
 // }
+
+//    // Printing "Hello World" without using semicolon  //
+// int main()
+// {
+//   while (cout << "Hello World\n" && false) //?-->Correct
+//   for (cout<<"Hello World\n";;)  //!-->Incorrect
+//   do{}while (cout<<"Hello World\n"&&false);  //!-->Incorrect
+//    return 0;
+// }
+////     Playing with ACSII character   //
+// int main(){
+//    char arr[] = {'0','1','2','3','4','5','6','7','8','9','a','b'}; 
+//    char a = arr[11]-arr[0];
+//    cout<<"hi"<<a;
+// }
+
+int main(){
+   float a = (float)5/3;
+   cout<<a<<endl;
+}
