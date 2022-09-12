@@ -114,7 +114,40 @@ using namespace std;
 //    cout<<"hi"<<a;
 // }
 
-int main(){
-   float a = (float)5/3;
-   cout<<a<<endl;
+// int main(){
+   // float a = (float)5/3;
+   // cout<<a<<endl;
+
+   // char s = '3';
+   // int a = s+1-48;
+   // cout <<a;
+//    int a = 2;
+//    char b = 2;
+//    cout<<"q"<<b<<"h";
+
+//    return 0;
+// }
+#include <vector>
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    int n,q,m;
+    cin >>n>>q;
+    vector <int> arr; 
+    for (int i=0; i<n; i++){
+        cin>>m;
+        for (int j=0; j<m; j++){
+            cin>>arr[j];
+        } 
+    }
+   //  int x,y;
+   //  for(int i=0; i<q; i++){
+   //      cin>>x>>y;
+   //      cout<<arr[y];
+   //  }
+   cout<<arr[3];
+    
+    return 0;
 }
