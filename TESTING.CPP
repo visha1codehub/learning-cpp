@@ -1,6 +1,8 @@
-#include <iostream>
-#include <cmath>
+#include <bits/stdc++.h>     //^--> It contains all header files for c++.....
 using namespace std;
+
+// #include <iostream>
+// #include <cmath>
 // class B
 // {
 //   int b;
@@ -127,27 +129,79 @@ using namespace std;
 
 //    return 0;
 // }
-#include <vector>
-#include <iostream>
-using namespace std;
+// #include <vector>
+// #include <iostream>
+// #include <cstring>
+// #include <sstream>
+// using namespace std;
 
 
-int main() {
-    int n,q,m;
-    cin >>n>>q;
-    vector <int> arr; 
-    for (int i=0; i<n; i++){
-        cin>>m;
-        for (int j=0; j<m; j++){
-            cin>>arr[j];
-        } 
-    }
-   //  int x,y;
-   //  for(int i=0; i<q; i++){
-   //      cin>>x>>y;
-   //      cout<<arr[y];
-   //  }
-   cout<<arr[3];
-    
-    return 0;
+// int main() {
+//    string str;
+//    cin>>str;
+//    // cout<<str
+//    string str2;
+//     for(int i=0; i<str.size(); i++){
+//         if(str[i] != ','){
+//             str2 = str2+str[i];
+//         }
+//     }
+//     return 0;
+// }
+
+// C++ program to demonstrate
+// anomaly of delimitation of
+// getline() function
+// #include <iostream>
+// #include <string> 
+// #include <cstring> 
+// using namespace std;
+
+int main()
+{
+//  string name;
+//  int id;
+
+//  // Taking id as input
+//  cout << "Please enter your id: \n";
+//  cin >> id;
+
+//  // Takes the empty character as input
+//  cout << "Please enter your name: \n";
+//  getline(cin, name);
+
+//  // Prints id
+//  cout << "Your id : " << id << "\n";
+
+//  // Prints nothing in name field
+//  // as "\n" is considered a valid string
+//  cout << "Hello, " << name
+//   << " welcome to GfG !\n";
+
+ // Again Taking string as input
+//  getline(cin, name);
+
+//  // This actually prints the name
+//  cout << "Hello, " << name
+//   << " welcome to GfG !\n";
+
+
+
+// string str = "Hii this is something else means ~ELCAMINO~";
+// string str2;
+// str2 = str;
+// cout <<str2;
+// for (int i = 0; i < str.size(); i++)
+// {
+//     string st2 = "~";
+//     // if(str[i].compare(st2) == 0){
+
+//     // }
+// }
+unsigned long long int v= 1039*3749*8473;
+cout<<v;
+
+
+ return 0;
 }
+
