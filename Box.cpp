@@ -26,24 +26,9 @@ class Box
     int l, b, h;
 
 public:
-    Box()
-    {
-        l = 0;
-        b = 0;
-        h = 0;
-    }
-    Box(int x, int y, int z)
-    {
-        l = x;
-        b = y;
-        h = z;
-    }
-    Box(const Box &B)
-    {
-        l = B.l;
-        b = B.b;
-        h = B.h;
-    }
+    Box() : l{0}, b{0}, h{0} {}
+    Box(int x, int y, int z) : l{x}, b{y}, h{z} {}
+    Box(const Box &B) : l(B.l), b(B.b), h(B.h) {}
     int getLength() { return l; }
     int getBreadth() { return b; }
     int getHeight() { return h; }
@@ -61,7 +46,7 @@ public:
             return true;
         else if (h < B1.h && b == B1.b && l == B1.l)
             return true;
-        return 0;
+        return 1;
     }
     friend ostream &operator<<(ostream &os, const Box &B2);
 };

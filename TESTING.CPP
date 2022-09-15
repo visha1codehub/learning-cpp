@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>     //^--> It contains all header files for c++.....
+#include <bits/stdc++.h> //^--> It contains all header files for c++.....
 using namespace std;
 
 // #include <iostream>
@@ -111,18 +111,18 @@ using namespace std;
 // }
 ////     Playing with ACSII character   //
 // int main(){
-//    char arr[] = {'0','1','2','3','4','5','6','7','8','9','a','b'}; 
+//    char arr[] = {'0','1','2','3','4','5','6','7','8','9','a','b'};
 //    char a = arr[11]-arr[0];
 //    cout<<"hi"<<a;
 // }
 
 // int main(){
-   // float a = (float)5/3;
-   // cout<<a<<endl;
+// float a = (float)5/3;
+// cout<<a<<endl;
 
-   // char s = '3';
-   // int a = s+1-48;
-   // cout <<a;
+// char s = '3';
+// int a = s+1-48;
+// cout <<a;
 //    int a = 2;
 //    char b = 2;
 //    cout<<"q"<<b<<"h";
@@ -134,7 +134,6 @@ using namespace std;
 // #include <cstring>
 // #include <sstream>
 // using namespace std;
-
 
 // int main() {
 //    string str;
@@ -153,12 +152,12 @@ using namespace std;
 // anomaly of delimitation of
 // getline() function
 // #include <iostream>
-// #include <string> 
-// #include <cstring> 
+// #include <string>
+// #include <cstring>
 // using namespace std;
 
-int main()
-{
+// int main()
+// {
 //  string name;
 //  int id;
 
@@ -178,14 +177,12 @@ int main()
 //  cout << "Hello, " << name
 //   << " welcome to GfG !\n";
 
- // Again Taking string as input
+// Again Taking string as input
 //  getline(cin, name);
 
 //  // This actually prints the name
 //  cout << "Hello, " << name
 //   << " welcome to GfG !\n";
-
-
 
 // string str = "Hii this is something else means ~ELCAMINO~";
 // string str2;
@@ -198,10 +195,114 @@ int main()
 
 //     // }
 // }
-unsigned long long int v= 1039*3749*8473;
-cout<<v;
+// unsigned long long int v= (long long)1039*3749*8473;
+// cout<<v;
 
+//  return 0;
+// }
 
- return 0;
-}
+// #include <bits/stdc++.h>
 
+// using namespace std;
+
+// /*
+//  * Complete the 'diagonalDifference' function below.
+//  *
+//  * The function is expected to return an INTEGER.
+//  * The function accepts 2D_INTEGER_ARRAY arr as parameter.
+//  */
+
+// int diagonalDifference(int n, vector<vector<int>> arr) {
+//     int sumL=0, sumR=0;
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<n; j++){
+//             if(i == j)
+//                 sumL = sumL + arr[i][j];
+//             if(i+j == n-1)
+//                 sumR = sumR + arr[i][j];
+//         }
+//     }
+//     int dd = sumL - sumR;
+//     if (dd<0)
+//         dd = dd*(-1);
+//     return dd;
+// }
+
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     vector <vector<int>> arr(n);
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<n; j++){
+//             int x;
+//             cin>>x;
+//             arr[i].push_back(x);
+//         }
+//     }
+//     int dd = diagonalDifference(n, arr);
+//     cout<<dd;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+
+// using namespace std;
+
+// /*
+//  * Complete the 'plusMinus' function below.
+//  *
+//  * The function accepts INTEGER_ARRAY arr as parameter.
+//  */
+
+// void plusMinus(vector<int> arr)
+// {
+//     int plus = 0;
+//     int minus = 0;
+//     int zero = 0;
+//     cout << arr.size() << endl;
+//     for (int i = 0; i < arr.size(); i++)
+//     {
+//         if (arr.at(i) > 0)
+//             plus++;
+//         else if (arr.at(i) < 0)
+//             minus++;
+//         else
+//             zero++;
+//     }
+//     double size = (double)arr.size();
+//     cout << arr.size() << endl;
+//     cout << zero << endl;
+//     double ap = (double)plus / size;
+//     double am = (double)minus / size;
+//     double az = (double)zero / size;
+
+//     cout << fixed << setprecision(6) << ap << endl;
+
+//     cout << fixed << setprecision(6) << am << endl;
+
+//     cout << fixed << setprecision(6) << az << endl;
+// }
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     vector<int> v;
+//     for (int i = 0; i < n; i++)
+//     {
+//         int x;
+//         cin >> x;
+//         v.push_back(x);
+//     }
+//     plusMinus(v);
+//     return 0;
+// }
+int main (){
+    // int a=10, b=0;
+    // int c = a/b;  //! Throws error as--floating point exception (core dumped)
+
+    char c =123456;  //*-->give a "@"....
+    cout<<c<<endl;
+    return 0;
+ }
