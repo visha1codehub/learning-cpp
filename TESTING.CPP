@@ -298,11 +298,46 @@ using namespace std;
 //     plusMinus(v);
 //     return 0;
 // }
-int main (){
+int main()
+{
     // int a=10, b=0;
     // int c = a/b;  //! Throws error as--floating point exception (core dumped)
 
-    char c =123456;  //*-->give a "@"....
-    cout<<c<<endl;
+    // char c =123456;  //*-->gives "@"....
+    // cout<<c<<endl;
+
+    int n, k;
+    cin >> n >> k;
+    vector<int> rem;
+    while (n > 0)
+    {
+        
+        int r = n % 10;
+        rem.push_back(r);
+        n = n / 10;
+    }
+    for (int i = 0; i < rem.size(); i++)
+    {
+        cout<<rem[i]<<" ";
+    }
+    
+    int flag = 1;
+    for (int i = 0; i < rem.size() - 1; i++)
+    {
+        int dif = 0;
+        dif = abs(rem[i] - rem[i + 1]);
+        if (dif != k)
+        {
+            flag = 0;
+            break;
+        }
+    }
+    if (flag == 1)
+    {
+        cout << "You succeed!!!" << endl;
+    }
+    else
+        cout<<"You still succeed but not with special number..\n";
+
     return 0;
- }
+}
