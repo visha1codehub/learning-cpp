@@ -298,46 +298,131 @@ using namespace std;
 //     plusMinus(v);
 //     return 0;
 // }
+// int main()
+// {
+// int a=10, b=0;
+// int c = a/b;  //! Throws error as--floating point exception (core dumped)
+
+// char c =123456;  //*-->gives "@"....
+// cout<<c<<endl;
+
+// int n, k;
+// cin >> n >> k;
+// vector<int> rem;
+// while (n > 0)
+// {
+//     int r = n % 10;
+//     rem.push_back(r);
+//     n = n / 10;
+// }
+// for (int i = 0; i < rem.size(); i++)
+// {
+//     cout << rem[i] << " ";
+// }
+
+// int flag = 1;
+// for (int i = 0; i < rem.size() - 1; i++)
+// {
+//     int dif = 0;
+//     dif = abs(rem[i] - rem[i + 1]);
+//     if (dif != k)
+//     {
+//         flag = 0;
+//         break;
+//     }
+// }
+// if (flag == 1)
+// {
+//     cout << "You succeed!!!" << endl;
+// }
+// else
+//     cout << "You still succeed but not with special number..\n";
+
+// int n, k;
+// cin >> n >> k;
+// int rem[20];
+// int z = 0;
+// while (n > 0)
+// {
+//     int r = n % 10;
+//     rem[z] = r;
+//     n = n / 10;
+//     z++;
+// }
+// for (int i = 0; i < z; i++)
+// {
+//     cout << rem[i] << " ";
+// }
+
+// int flag = 1;
+// for (int i = 0; i < z - 1; i++)
+// {
+//     int dif = 0;
+//     dif = abs(rem[i] - rem[i + 1]);
+//     if (dif != k)
+//     {
+//         flag = 0;
+//         break;
+//     }
+// }
+// if (flag == 1)
+// {
+//     cout << "You succeed!!!" << endl;
+// }
+// else
+//     cout << "You still succeed but not with special number..\n";
+
+//     return 0;
+// }
+
+// int data()
+// {
+//     int s = 5;
+//     return s;
+// }
+// int main()
+// {
+//     int a = data();
+//     cout<<a;
+//     return 0;
+// }
+// char* data()
+// {
+//     // char s[] = "vishal";
+//     // static char s[] = "vishal";
+//     char* s = "vishal";
+//     return s;
+// }
+// int main()
+// {
+//     char* a = data();
+//     // a[0] = 's';
+//     cout<<a;
+//     return 0;
+// }
+
 int main()
 {
-    // int a=10, b=0;
-    // int c = a/b;  //! Throws error as--floating point exception (core dumped)
-
-    // char c =123456;  //*-->gives "@"....
-    // cout<<c<<endl;
-
-    int n, k;
-    cin >> n >> k;
-    vector<int> rem;
-    while (n > 0)
+    // for (int i = 0; i <= 15; i += 2)
+    // {
+    //     cout << i << " " << endl;
+    //     if (i & 1)
+    //     {
+    //         continue;
+    //     }
+    //     i++;
+    // }
+    for (int i = 0; i < 5; i++)
     {
-        
-        int r = n % 10;
-        rem.push_back(r);
-        n = n / 10;
-    }
-    for (int i = 0; i < rem.size(); i++)
-    {
-        cout<<rem[i]<<" ";
-    }
-    
-    int flag = 1;
-    for (int i = 0; i < rem.size() - 1; i++)
-    {
-        int dif = 0;
-        dif = abs(rem[i] - rem[i + 1]);
-        if (dif != k)
+        for (int j = i; j <= 5; j++)
         {
-            flag = 0;
-            break;
+            cout << i << " " << j << endl;
+            sleep(1);
+            system("clear");
         }
     }
-    if (flag == 1)
-    {
-        cout << "You succeed!!!" << endl;
-    }
-    else
-        cout<<"You still succeed but not with special number..\n";
+
+    // cout<<(10&5);
 
     return 0;
 }

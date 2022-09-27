@@ -5,18 +5,21 @@ int main()
 {
     int n, k;
     cin >> n >> k;
-    vector<int> store;
+    int rem[10];
+    int store[30];
+    int y = 0;
     for (int i = (pow(10, (n - 1))); i < (pow(10, n)); i++)
     {
-        vector<int> rem;
+        int z = 0;
         while (i > 0)
         {
             int r = i % 10;
-            rem.push_back(r);
+            rem[z] = r;
+            z++;
             i = i / 10;
         }
         int flag = 1;
-        for (int j = 0; j < rem.size() - 1; j++)
+        for (int j = 0; j < z - 1; j++)
         {
             int dif = 0;
             dif = abs(rem[j] - rem[j + 1]);
@@ -27,11 +30,11 @@ int main()
         }
         if (flag == 1)
         {
-            store.push_back(i);
+            store[y] = i;
+            y++;
         }
-        rem.clear();
     }
-    for (int i = 0; i < store.size(); i++)
+    for (int i = 0; i < y; i++)
     {
         cout << store[i] << " ";
     }
