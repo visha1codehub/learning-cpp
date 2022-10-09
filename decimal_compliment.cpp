@@ -3,8 +3,8 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
+    int n=8;
+    // cin >> n;
     int mask = 0;
     int temp = n;
     if (n == 0)

@@ -19,9 +19,9 @@ void sort_0_1(vector<int> &arr, int n)
 }
 void printvec(vector<int> arr)
 {
-    for (int i = 0; i < arr.size(); i++)
+    for (int i : arr)
     {
-        cout << arr[i] << " ";
+        cout << i << " ";
     }
     cout << endl;
 }
