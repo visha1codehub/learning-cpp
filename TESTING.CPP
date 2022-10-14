@@ -1,5 +1,5 @@
-#include <bits/stdc++.h> //^--> It contains all header files for c++.....
-using namespace std;
+// #include <bits/stdc++.h> //^--> It contains all header files for c++.....
+// using namespace std;
 
 // #include <iostream>
 // #include <cmath>
@@ -401,8 +401,8 @@ using namespace std;
 //     return 0;
 // }
 
-int main()
-{
+// int main()
+// {
     // for (int i = 0; i <= 15; i += 2)
     // {
     //     cout << i << " " << endl;
@@ -412,17 +412,157 @@ int main()
     //     }
     //     i++;
     // }
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = i; j <= 5; j++)
-        {
-            cout << i << " " << j << endl;
-            sleep(1);
-            system("clear");
-        }
-    }
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     for (int j = i; j <= 5; j++)
+    //     {
+    //         cout << i << " " << j << endl;
+    //         sleep(1);
+    //         system("clear");
+    //     }
+    // }
 
     // cout<<(10&5);
+
+
+    // string s = "";
+    // string t = "";
+    // // s.erase(s.begin(),s.end());
+    // // t.erase(t.begin(),t.end());
+    // s.pop_back();
+    // if (s == t)
+    //     cout<<"Yes"<<endl;
+    // else
+    //     cout<<"No"<<endl;
+    // return 0;
+
+    // int arr[5] = {8,12,18,20,28};
+    // int gcd = arr[0];
+    // for (int i = 1; i < 5; i++)
+    // {
+    //     gcd = __gcd(gcd,arr[i]);
+    // }
+    // cout<<gcd;
+
+    // vector<int> v = {1,2,3,7,4,69,6,3};
+    // int max = *max_element(v.begin(),v.end());
+    
+    // int *pt = NULL;
+    // // pt = new int[10];
+    // pt = new int(234);
+    // // for(int i=0; i<10; i++)
+    // cout<<*pt<<endl;;
+
+//     int a,b,c;
+//     cin>>a>>b>>c;
+//     cout<<(a>b?a>c?a:c:b>c?b:c)<<endl;
+// }
+
+// #include <bits/stdc++.h>
+
+// using namespace std;
+
+// string ltrim(const string &);
+// string rtrim(const string &);
+// vector<string> split(const string &);
+
+
+// int beautifulDays(int i, int j, int k) {
+//     int count = 0;
+//     for(int a=i; a<=j; a++){
+//         int original = a;
+//         int r, reverse = 0;
+//         int temp = a;
+//         while (temp>0)
+//         {
+//             r = temp%10;
+//             reverse = r + reverse*10;
+//             temp = temp/10;
+//         }
+//         int val = abs(original-reverse);
+//         if(val%k == 0)
+//             count++;
+//     }
+//     return count;      
+// }
+
+// int main()
+// {
+//     ofstream fout(getenv("OUTPUT_PATH"));
+
+//     string first_multiple_input_temp;
+//     getline(cin, first_multiple_input_temp);
+
+//     vector<string> first_multiple_input = split(rtrim(first_multiple_input_temp));
+
+//     int i = stoi(first_multiple_input[0]);
+
+//     int j = stoi(first_multiple_input[1]);
+
+//     int k = stoi(first_multiple_input[2]);
+
+//     int result = beautifulDays(i, j, k);
+
+//     fout << result << "\n";
+
+//     fout.close();
+
+//     return 0;
+// }
+
+// string ltrim(const string &str) {
+//     string s(str);
+
+//     s.erase(
+//         s.begin(),
+//         find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+//     );
+
+//     return s;
+// }
+
+// string rtrim(const string &str) {
+//     string s(str);
+
+//     s.erase(
+//         find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+//         s.end()
+//     );
+
+//     return s;
+// }
+
+// vector<string> split(const string &str) {
+//     vector<string> tokens;
+
+//     string::size_type start = 0;
+//     string::size_type end = 0;
+
+//     while ((end = str.find(" ", start)) != string::npos) {
+//         tokens.push_back(str.substr(start, end - start));
+
+//         start = end + 1;
+//     }
+
+//     tokens.push_back(str.substr(start));
+
+//     return tokens;
+// }
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    vector<int> v = {18,6,4,4,5,67};
+    vector<int> v1 = {13,6,3};
+    v = v1;
+    for (int i : v1)
+        cout << i << " ";
+    cout << endl;
+    for (int i : v)
+        cout << i << " ";
+    cout << endl;
 
     return 0;
 }

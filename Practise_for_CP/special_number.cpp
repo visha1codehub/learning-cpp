@@ -11,12 +11,13 @@ int main()
     for (int i = (pow(10, (n - 1))); i < (pow(10, n)); i++)
     {
         int z = 0;
-        while (i > 0)
+        int temp = i;    //sudhar!   but didn't work...........
+        while (temp > 0)
         {
-            int r = i % 10;
+            int r = temp % 10;
             rem[z] = r;
             z++;
-            i = i / 10;
+            temp = temp / 10;
         }
         int flag = 1;
         for (int j = 0; j < z - 1; j++)
@@ -30,7 +31,7 @@ int main()
         }
         if (flag == 1)
         {
-            store[y] = i;
+            store[y] = temp;
             y++;
         }
     }
